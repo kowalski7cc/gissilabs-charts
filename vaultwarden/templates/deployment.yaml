@@ -359,6 +359,8 @@ spec:
               value: {{ .Values.vaultwarden.sso.authOnlyNotSession | quote }}
             - name: SSO_CLIENT_CACHE_EXPIRATION
               value: {{ .Values.vaultwarden.sso.clientCacheExpiration | quote }}
+            - name: SSO_SKIP_2FA
+              value: {{ .Values.vaultwarden.sso.skip2FA | quote }}
             - name: SSO_DEBUG_TOKENS
               value: {{ .Values.vaultwarden.sso.debugTokens | quote }}
             {{- end }}{{/* SSO */}}

@@ -206,6 +206,8 @@ vaultwarden:
     authOnlyNotSession: false
     # -- Cache calls to the discovery endpoint, duration in seconds, `0` to disable (default `0`);
     clientCacheExpiration: 0
+    # -- Skip 2FA when logging in with SSO (default `false`)
+    skip2FA: false
     # -- Log all tokens for easier debugging (default `false`, `LOG_LEVEL=debug` or `LOG_LEVEL=info,vaultwarden::sso=debug` need to be set)
     debugTokens: false
 
